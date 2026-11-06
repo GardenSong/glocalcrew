@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Glocal Crew 2026 · Today</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Jua&family=Nunito:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap">
+<style>
+:root{--bg:#EEF1EC;--card:#FFFFFF;--ink:#18211D;--muted:#5D6B64;--line:#D5DDD8;--jade:#245E4B;--jade-soft:#E1EEE8;--can:#256B45;--can-soft:#E3F2E8;--check:#9A6412;--check-soft:#FBF0DC;--no:#9B3B30;--no-soft:#F8E6E3;--on-jade:#FFFFFF;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121815;--card:#1B231F;--ink:#E7EEEA;--muted:#9AABA2;--line:#2F3A35;--jade:#6FB79A;--jade-soft:#1F3A2F;--can:#7CC99B;--can-soft:#1C3326;--check:#E2B05A;--check-soft:#3A2E17;--no:#E5897D;--no-soft:#3B201C;--on-jade:#0E1A15;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121815;--card:#1B231F;--ink:#E7EEEA;--muted:#9AABA2;--line:#2F3A35;--jade:#6FB79A;--jade-soft:#1F3A2F;--can:#7CC99B;--can-soft:#1C3326;--check:#E2B05A;--check-soft:#3A2E17;--no:#E5897D;--no-soft:#3B201C;--on-jade:#0E1A15;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:15px;line-height:1.5}
+button,select{font:inherit;color:inherit}
+button{cursor:pointer}
+button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--jade);outline-offset:2px}
+.demo{max-width:440px;margin:0 auto;padding:12px 16px 6px;display:flex;gap:8px;align-items:center;font-size:12px;color:var(--muted)}
+.demo select{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:4px 6px;font-size:12px}
+.phone{max-width:440px;margin:0 auto 28px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;min-height:620px;display:flex;flex-direction:column}
+@media (max-width:480px){.phone{border-radius:0;border-left:0;border-right:0}}
+.bar{position:sticky;top:0;z-index:5;background:var(--jade);color:var(--on-jade);padding:12px 18px}
+.bar .ev{font-size:12px;opacity:.85}
+.bar-top{display:flex;align-items:center;gap:8px}.bar-top .ev{flex:1}
+.lang{border:1px solid rgba(255,255,255,.55);background:none;color:inherit;border-radius:999px;padding:3px 12px;font-size:12px;font-weight:500}
+.bar .st{font-weight:600;font-size:17px}
+.bar .sub{font-size:13px;opacity:.92}
+.main{flex:1;padding:16px 18px 24px}
+.tabs{position:sticky;bottom:0;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);background:var(--card);padding-bottom:env(safe-area-inset-bottom,0px)}
+.tabs button{border:0;background:none;padding:10px 0 12px;font-size:13px;color:var(--muted)}
+.tabs button[aria-current="page"]{color:var(--jade);font-weight:600}
+h1{font-size:21px;font-weight:600;margin:2px 0 12px}
+h2{font-size:15px;font-weight:600;margin:20px 0 8px}
+.muted{color:var(--muted)}.small{font-size:13px}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:62px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.tl li:last-child{border-bottom:0}
+.tl .t{font-weight:600;font-size:14px}
+.tl .w{font-weight:500}
+.tl .p{font-size:13px;color:var(--muted)}
+.tl li.now{background:var(--jade-soft);margin:0 -10px;padding:10px;border-radius:12px;border-bottom-color:transparent}
+.tl li.done .w,.tl li.done .t{color:var(--muted);font-weight:400}
+.pill{display:inline-block;font-size:11px;font-weight:600;background:var(--jade);color:var(--on-jade);border-radius:999px;padding:1px 8px;margin-left:6px;vertical-align:1px}
+.act{display:inline-block;margin-top:6px;margin-right:12px;font-size:13px;color:var(--jade);font-weight:500;background:none;border:0;padding:0;text-decoration:underline;text-underline-offset:3px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:7px 14px;font-size:14px}
+.chip[aria-pressed="true"]{border-color:var(--jade);background:var(--jade-soft);color:var(--jade);font-weight:500}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:2px 12px}
+.grid label{display:flex;gap:8px;align-items:center;padding:7px 0;font-size:14px}
+.grid input{width:18px;height:18px;accent-color:var(--jade)}
+.btn{display:block;width:100%;border:0;border-radius:12px;padding:12px;font-weight:600;background:var(--jade);color:var(--on-jade);margin-top:16px;text-align:center;text-decoration:none}
+.btn.ghost{background:none;border:1px solid var(--line);color:var(--ink);font-weight:500}
+.diet{display:flex;align-items:center;gap:8px;background:var(--bg);border-radius:12px;padding:10px 12px;font-size:13px}
+.diet span{flex:1}
+.link{background:none;border:0;padding:0;color:var(--jade);font-weight:500;text-decoration:underline;text-underline-offset:3px;font-size:13px}
+.menu{border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:8px}
+.menu .mn{font-weight:500}
+.menu .ing{font-size:13px;color:var(--muted)}
+.tag{display:inline-block;font-size:12px;border-radius:6px;padding:2px 8px;margin-top:4px;font-weight:500}
+.t-can{background:var(--can-soft);color:var(--can)}.t-check{background:var(--check-soft);color:var(--check)}.t-no{background:var(--no-soft);color:var(--no)}
+.sum{display:flex;gap:6px;flex-wrap:wrap;margin:-2px 0 10px}
+details summary{cursor:pointer;font-size:13px;font-weight:600;margin:12px 0 6px;list-style:none;color:var(--muted)}
+details summary::before{content:"+ "}details[open] summary::before{content:"− "}
+.place{border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:10px}
+.place .n{font-weight:600}
+.place .ko{color:var(--muted);font-weight:400;font-size:14px;margin-left:6px}
+.place .meta{font-size:13px;color:var(--muted)}
+.quiet{border:1px dashed var(--line);border-radius:14px;padding:14px;margin-top:22px}
+.quiet h2{margin-top:0}
+.note{font-size:12px;color:var(--muted);margin-top:12px}
+.maps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:8px}
+.mapbtn{display:flex;flex-direction:column;align-items:center;gap:4px;border:1px solid var(--line);border-radius:12px;padding:10px 4px;text-decoration:none;color:var(--ink);font-size:12px;font-weight:500;background:var(--card)}
+.mapbtn .pin{width:22px;height:22px;color:var(--jade)}
+.mapbtn .logo{width:26px;height:26px;object-fit:contain}
+.toast{position:sticky;bottom:64px;margin:0 18px;background:var(--ink);color:var(--card);border-radius:10px;padding:10px 14px;font-size:13px;text-align:center}
+.sample{font-size:11px;color:var(--muted);text-align:center;padding:0 16px 14px}
+
+/* Glocal Crew brand */
+:root{--bg:#E8872B;--card:#FFF6E5;--ink:#2B1A0E;--muted:#6B4A33;--line:#2B1A0E;--jade:#C4501B;--jade-soft:#FFE3C2;--can:#2F7D4A;--can-soft:#DFF1E3;--check:#2E5AAC;--check-soft:#E3ECFA;--no:#B3261E;--no-soft:#FBE3E1;--on-jade:#FFF6E5;--brand:#E8872B;--brown:#2B1A0E;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1E140C;--card:#2B1E14;--ink:#FBEFD9;--muted:#C9AE8E;--line:#7A5A3E;--jade:#F5A34A;--jade-soft:#4A2E14;--can:#86D29E;--can-soft:#1F3626;--check:#9DBBF2;--check-soft:#1E2A42;--no:#F2958C;--no-soft:#45201C;--on-jade:#1E140C;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1E140C;--card:#2B1E14;--ink:#FBEFD9;--muted:#C9AE8E;--line:#7A5A3E;--jade:#F5A34A;--jade-soft:#4A2E14;--can:#86D29E;--can-soft:#1F3626;--check:#9DBBF2;--check-soft:#1E2A42;--no:#F2958C;--no-soft:#45201C;--on-jade:#1E140C;color-scheme:dark}
+body{font-family:"Nunito","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif}
+.demo{color:#2B1A0E}
+.phone{border:2.5px solid var(--brown);box-shadow:6px 6px 0 var(--brown);background:var(--card)}
+@media (max-width:480px){.phone{box-shadow:none;border-left:0;border-right:0}}
+.bar{background:var(--brand);color:#2B1A0E;border-bottom:2.5px solid var(--brown)}
+.bar .ev{font-weight:800;letter-spacing:.01em;opacity:1}
+.bar .st{font-family:"Lilita One","Jua",sans-serif;font-weight:400;font-size:24px;line-height:1.15;color:#FFF6E5;-webkit-text-stroke:0;text-shadow:2px 2px 0 #2B1A0E;margin:2px 0}
+.bar .sub{opacity:1;font-weight:600}
+.lang{border:2px solid #2B1A0E;background:#FFF6E5;color:#2B1A0E;font-weight:800}
+h1{font-family:"Lilita One","Jua",sans-serif;font-weight:400;font-size:26px;letter-spacing:.005em}
+h2{font-weight:800}
+.tl li{border-bottom:1.5px dotted #D9B98F}
+.tl .t{color:#C4501B;font-family:"Lilita One","Jua",sans-serif;font-weight:400;font-size:16px}
+.tl li.now{background:var(--jade-soft);border:2px solid var(--brown);box-shadow:3px 3px 0 var(--brown)}
+.pill{background:var(--brown);color:#FFF6E5}
+.menu,.place,.mapbtn{border:2px solid var(--line);box-shadow:3px 3px 0 var(--line)}
+.btn{background:var(--brown);color:#FFF6E5;border:2px solid var(--brown);box-shadow:3px 3px 0 #C4501B}
+.btn.ghost{background:var(--card);color:var(--ink);border:2px solid var(--line);box-shadow:3px 3px 0 var(--line)}
+.chip{border:2px solid var(--line)}
+.chip[aria-pressed="true"]{background:var(--brown);color:#FFF6E5;border-color:var(--brown)}
+.diet{background:var(--jade-soft);border:2px solid var(--line)}
+.quiet{border:2px dashed var(--line)}
+.tabs{background:var(--brown);border-top:0;position:sticky}
+.tabs::before{content:"";position:absolute;left:0;right:0;top:-8px;height:8px;background:repeating-linear-gradient(90deg,#C8321E 0 14px,#FFF6E5 14px 20px,#2E7D4F 20px 34px,#F2B632 34px 48px,#FFF6E5 48px 54px)}
+.tabs button{color:#E9D6B8;font-weight:700}
+.tabs button[aria-current="page"]{color:#F5A34A}
+.notice{border:2px solid #B3261E;background:#FFF0E8;color:#2B1A0E;border-radius:14px;padding:12px 14px;margin:0 0 14px;box-shadow:3px 3px 0 #B3261E}
+.notice b{color:#B3261E}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .notice{background:#3A1E16;color:#FBEFD9}}
+.contact{margin-top:18px;border:2px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:3px 3px 0 var(--line)}
+.contact a{color:var(--jade);font-weight:700}
+.sample{color:#2B1A0E}
+/* Readability pass */
+:root{--soft:#E6D1AF}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--soft:#4F3B29}}
+:root[data-theme="dark"]{--soft:#4F3B29}
+body{font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:16px;line-height:1.55}
+.bar .st{font-family:"Noto Sans KR",sans-serif;font-weight:800;font-size:21px;color:#2B1A0E;text-shadow:none;letter-spacing:-.01em}
+.bar .sub{font-size:14px;font-weight:500}
+h1{font-family:"Noto Sans KR",sans-serif;font-weight:800;font-size:23px;letter-spacing:-.02em}
+h2{font-size:16px}
+.tl .t{font-family:"Noto Sans KR",sans-serif;font-weight:800;font-size:15px}
+.tl .w{font-weight:700}
+.tl .p{font-size:14px}
+.tl li{border-bottom:1px solid var(--soft)}
+.tl li.now{border:1.5px solid var(--brand);box-shadow:none}
+.info{background:var(--card);border:1px solid var(--soft);border-radius:12px;padding:10px 12px;margin-top:8px}
+.info .p{margin:0}
+.info .p+.p{margin-top:4px}
+.menu{border:0;border-bottom:1px solid var(--soft);border-radius:0;box-shadow:none;padding:11px 2px;margin:0}
+.menu .mn{font-weight:600}
+.menu .ing{font-size:14px}
+.place,.mapbtn,.contact,.diet{border:1.5px solid var(--soft);box-shadow:none}
+.mapbtn{padding:10px 4px;font-size:13px}
+.btn{box-shadow:none}
+.btn.ghost{border:1.5px solid var(--soft);box-shadow:none}
+.chip{border:1.5px solid var(--soft)}
+.notice{border:1.5px solid #B3261E;box-shadow:none;font-size:15px}
+.quiet{border:1.5px dashed var(--soft)}
+.tag{font-size:13px}
+
+/* Calm pass: brand as accent only */
+:root{--bg:#F4EFE8;--card:#FFFDF9;--ink:#2A211A;--muted:#6E5E50;--line:#E5DACB;--soft:#E5DACB;--jade:#C2571A;--jade-soft:#FCEBDD;--on-jade:#FFFFFF;--brand:#E8872B;--can:#2F7D4A;--can-soft:#E3F3E7;--check:#2E5AAC;--check-soft:#E6EEFB;--no:#B3261E;--no-soft:#FBE6E4;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141210;--card:#1D1A17;--ink:#F2ECE4;--muted:#B7AA9B;--line:#3A332C;--soft:#3A332C;--jade:#F0A15C;--jade-soft:#35251A;--on-jade:#1D1A17;--brand:#E8872B;--can:#86D29E;--can-soft:#1E3326;--check:#9DBBF2;--check-soft:#1E2940;--no:#F2958C;--no-soft:#41201C;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141210;--card:#1D1A17;--ink:#F2ECE4;--muted:#B7AA9B;--line:#3A332C;--soft:#3A332C;--jade:#F0A15C;--jade-soft:#35251A;--on-jade:#1D1A17;--brand:#E8872B;--can:#86D29E;--can-soft:#1E3326;--check:#9DBBF2;--check-soft:#1E2940;--no:#F2958C;--no-soft:#41201C;color-scheme:dark}
+body{background:var(--bg);color:var(--ink)}
+.demo,.sample{color:var(--muted)}
+.demo select{background:var(--card);color:var(--ink);border:1px solid var(--soft)}
+.phone{background:var(--card);border:1px solid var(--soft);box-shadow:none}
+.bar{background:var(--card);color:var(--ink);border-top:5px solid var(--brand);border-bottom:1px solid var(--soft)}
+.bar .ev{color:var(--jade);font-weight:700}
+.bar .st{color:var(--ink)}
+.bar .sub{color:var(--muted)}
+.lang{background:var(--card);color:var(--ink);border:1.5px solid var(--soft)}
+.tabs{background:var(--card);border-top:1px solid var(--soft)}
+.tabs::before{display:none}
+.tabs button{color:var(--muted)}
+.tabs button[aria-current="page"]{color:var(--jade)}
+.tl .t{color:var(--jade)}
+.tl li.now{background:var(--jade-soft);border:1.5px solid var(--jade)}
+.pill{background:var(--jade);color:var(--on-jade)}
+.btn{background:var(--jade);color:var(--on-jade);border:0}
+.btn.ghost{background:var(--card);color:var(--ink);border:1.5px solid var(--soft)}
+.chip[aria-pressed="true"]{background:var(--jade);color:var(--on-jade);border-color:var(--jade)}
+.diet{background:var(--jade-soft)}
+.notice{background:var(--no-soft);color:var(--ink);border:1.5px solid var(--no)}
+.notice b{color:var(--no)}
+.contact a{color:var(--jade)}
+.contact a.btn{color:var(--on-jade)}
+.contact a.btn.ghost{color:var(--ink)}
+.link,.act{color:var(--jade)}
+.day{margin:0 0 16px}
+.day-top,.day-ends{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+.day-top{margin-bottom:8px;color:var(--ink);font-weight:700}
+.day-ends{margin-top:6px}
+.track{position:relative;height:8px;background:var(--soft);border-radius:99px}
+.track.sm{height:6px;margin-top:8px}
+.fill{position:absolute;left:0;top:0;bottom:0;background:var(--brand);border-radius:99px}
+.dot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;background:var(--card);border:3px solid var(--brand);transform:translate(-50%,-50%)}
+@media (prefers-reduced-motion:no-preference){.fill{transition:width .6s ease}.dot{transition:left .6s ease}}
+.leaflet-image-layer,.leaflet-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-pane,.leaflet-pane>canvas,.leaflet-pane>svg,.leaflet-tile,.leaflet-tile-container,.leaflet-zoom-box{position:absolute;left:0;top:0}.leaflet-container{overflow:hidden}.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile{-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-user-drag:none}.leaflet-tile::selection{background:0 0}.leaflet-safari .leaflet-tile{image-rendering:-webkit-optimize-contrast}.leaflet-safari .leaflet-tile-container{width:1600px;height:1600px;-webkit-transform-origin:0 0}.leaflet-marker-icon,.leaflet-marker-shadow{display:block}.leaflet-container .leaflet-overlay-pane svg{max-width:none!important;max-height:none!important}.leaflet-container .leaflet-marker-pane img,.leaflet-container .leaflet-shadow-pane img,.leaflet-container .leaflet-tile,.leaflet-container .leaflet-tile-pane img,.leaflet-container img.leaflet-image-layer{max-width:none!important;max-height:none!important;width:auto;padding:0}.leaflet-container img.leaflet-tile{mix-blend-mode:plus-lighter}.leaflet-container.leaflet-touch-zoom{-ms-touch-action:pan-x pan-y;touch-action:pan-x pan-y}.leaflet-container.leaflet-touch-drag{-ms-touch-action:pinch-zoom;touch-action:none;touch-action:pinch-zoom}.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom{-ms-touch-action:none;touch-action:none}.leaflet-container{-webkit-tap-highlight-color:transparent}.leaflet-container a{-webkit-tap-highlight-color:rgba(51,181,229,.4)}.leaflet-tile{filter:inherit;visibility:hidden}.leaflet-tile-loaded{visibility:inherit}.leaflet-zoom-box{width:0;height:0;-moz-box-sizing:border-box;box-sizing:border-box;z-index:800}.leaflet-overlay-pane svg{-moz-user-select:none}.leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}.leaflet-shadow-pane{z-index:500}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}.leaflet-popup-pane{z-index:700}.leaflet-map-pane canvas{z-index:100}.leaflet-map-pane svg{z-index:200}.leaflet-vml-shape{width:1px;height:1px}.lvml{behavior:url(#default#VML);display:inline-block;position:absolute}.leaflet-control{position:relative;z-index:800;pointer-events:visiblePainted;pointer-events:auto}.leaflet-bottom,.leaflet-top{position:absolute;z-index:1000;pointer-events:none}.leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}.leaflet-control{float:left;clear:both}.leaflet-right .leaflet-control{float:right}.leaflet-top .leaflet-control{margin-top:10px}.leaflet-bottom .leaflet-control{margin-bottom:10px}.leaflet-left .leaflet-control{margin-left:10px}.leaflet-right .leaflet-control{margin-right:10px}.leaflet-fade-anim .leaflet-popup{opacity:0;-webkit-transition:opacity .2s linear;-moz-transition:opacity .2s linear;transition:opacity .2s linear}.leaflet-fade-anim .leaflet-map-pane .leaflet-popup{opacity:1}.leaflet-zoom-animated{-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0}svg.leaflet-zoom-animated{will-change:transform}.leaflet-zoom-anim .leaflet-zoom-animated{-webkit-transition:-webkit-transform .25s cubic-bezier(0,0,.25,1);-moz-transition:-moz-transform .25s cubic-bezier(0,0,.25,1);transition:transform .25s cubic-bezier(0,0,.25,1)}.leaflet-pan-anim .leaflet-tile,.leaflet-zoom-anim .leaflet-tile{-webkit-transition:none;-moz-transition:none;transition:none}.leaflet-zoom-anim .leaflet-zoom-hide{visibility:hidden}.leaflet-interactive{cursor:pointer}.leaflet-grab{cursor:-webkit-grab;cursor:-moz-grab;cursor:grab}.leaflet-crosshair,.leaflet-crosshair .leaflet-interactive{cursor:crosshair}.leaflet-control,.leaflet-popup-pane{cursor:auto}.leaflet-dragging .leaflet-grab,.leaflet-dragging .leaflet-grab .leaflet-interactive,.leaflet-dragging .leaflet-marker-draggable{cursor:move;cursor:-webkit-grabbing;cursor:-moz-grabbing;cursor:grabbing}.leaflet-image-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-pane>svg path,.leaflet-tile-container{pointer-events:none}.leaflet-image-layer.leaflet-interactive,.leaflet-marker-icon.leaflet-interactive,.leaflet-pane>svg path.leaflet-interactive,svg.leaflet-image-layer.leaflet-interactive path{pointer-events:visiblePainted;pointer-events:auto}.leaflet-container{background:#ddd;outline-offset:1px}.leaflet-container a{color:#0078a8}.leaflet-zoom-box{border:2px dotted #38f;background:rgba(255,255,255,.5)}.leaflet-container{font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:12px;font-size:.75rem;line-height:1.5}.leaflet-bar{box-shadow:0 1px 5px rgba(0,0,0,.65);border-radius:4px}.leaflet-bar a{background-color:#fff;border-bottom:1px solid #ccc;width:26px;height:26px;line-height:26px;display:block;text-align:center;text-decoration:none;color:#000}.leaflet-bar a,.leaflet-control-layers-toggle{background-position:50% 50%;background-repeat:no-repeat;display:block}.leaflet-bar a:focus,.leaflet-bar a:hover{background-color:#f4f4f4}.leaflet-bar a:first-child{border-top-left-radius:4px;border-top-right-radius:4px}.leaflet-bar a:last-child{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-bottom:none}.leaflet-bar a.leaflet-disabled{cursor:default;background-color:#f4f4f4;color:#bbb}.leaflet-touch .leaflet-bar a{width:30px;height:30px;line-height:30px}.leaflet-touch .leaflet-bar a:first-child{border-top-left-radius:2px;border-top-right-radius:2px}.leaflet-touch .leaflet-bar a:last-child{border-bottom-left-radius:2px;border-bottom-right-radius:2px}.leaflet-control-zoom-in,.leaflet-control-zoom-out{font:bold 18px 'Lucida Console',Monaco,monospace;text-indent:1px}.leaflet-touch .leaflet-control-zoom-in,.leaflet-touch .leaflet-control-zoom-out{font-size:22px}.leaflet-control-layers{box-shadow:0 1px 5px rgba(0,0,0,.4);background:#fff;border-radius:5px}.leaflet-control-layers-toggle{background-image:url(data:,layers.png);width:36px;height:36px}.leaflet-retina .leaflet-control-layers-toggle{background-image:url(data:,layers-2x.png);background-size:26px 26px}.leaflet-touch .leaflet-control-layers-toggle{width:44px;height:44px}.leaflet-control-layers .leaflet-control-layers-list,.leaflet-control-layers-expanded .leaflet-control-layers-toggle{display:none}.leaflet-control-layers-expanded .leaflet-control-layers-list{display:block;position:relative}.leaflet-control-layers-expanded{padding:6px 10px 6px 6px;color:#333;background:#fff}.leaflet-control-layers-scrollbar{overflow-y:scroll;overflow-x:hidden;padding-right:5px}.leaflet-control-layers-selector{margin-top:2px;position:relative;top:1px}.leaflet-control-layers label{display:block;font-size:13px;font-size:1.08333em}.leaflet-control-layers-separator{height:0;border-top:1px solid #ddd;margin:5px -10px 5px -6px}.leaflet-default-icon-path{background-image:url(data:,marker-icon.png)}.leaflet-container .leaflet-control-attribution{background:#fff;background:rgba(255,255,255,.8);margin:0}.leaflet-control-attribution,.leaflet-control-scale-line{padding:0 5px;color:#333;line-height:1.4}.leaflet-control-attribution a{text-decoration:none}.leaflet-control-attribution a:focus,.leaflet-control-attribution a:hover{text-decoration:underline}.leaflet-attribution-flag{display:inline!important;vertical-align:baseline!important;width:1em;height:.6669em}.leaflet-left .leaflet-control-scale{margin-left:5px}.leaflet-bottom .leaflet-control-scale{margin-bottom:5px}.leaflet-control-scale-line{border:2px solid #777;border-top:none;line-height:1.1;padding:2px 5px 1px;white-space:nowrap;-moz-box-sizing:border-box;box-sizing:border-box;background:rgba(255,255,255,.8);text-shadow:1px 1px #fff}.leaflet-control-scale-line:not(:first-child){border-top:2px solid #777;border-bottom:none;margin-top:-2px}.leaflet-control-scale-line:not(:first-child):not(:last-child){border-bottom:2px solid #777}.leaflet-touch .leaflet-bar,.leaflet-touch .leaflet-control-attribution,.leaflet-touch .leaflet-control-layers{box-shadow:none}.leaflet-touch .leaflet-bar,.leaflet-touch .leaflet-control-layers{border:2px solid rgba(0,0,0,.2);background-clip:padding-box}.leaflet-popup{position:absolute;text-align:center;margin-bottom:20px}.leaflet-popup-content-wrapper{padding:1px;text-align:left;border-radius:12px}.leaflet-popup-content{margin:13px 24px 13px 20px;line-height:1.3;font-size:13px;font-size:1.08333em;min-height:1px}.leaflet-popup-content p{margin:17px 0;margin:1.3em 0}.leaflet-popup-tip-container{width:40px;height:20px;position:absolute;left:50%;margin-top:-1px;margin-left:-20px;overflow:hidden;pointer-events:none}.leaflet-popup-tip{width:17px;height:17px;padding:1px;margin:-10px auto 0;pointer-events:auto;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#333;box-shadow:0 3px 14px rgba(0,0,0,.4)}.leaflet-container a.leaflet-popup-close-button{position:absolute;top:0;right:0;border:none;text-align:center;width:24px;height:24px;font:16px/24px Tahoma,Verdana,sans-serif;color:#757575;text-decoration:none;background:0 0}.leaflet-container a.leaflet-popup-close-button:focus,.leaflet-container a.leaflet-popup-close-button:hover{color:#585858}.leaflet-popup-scrolled{overflow:auto}.leaflet-oldie .leaflet-popup-content-wrapper{-ms-zoom:1}.leaflet-oldie .leaflet-popup-tip{width:24px;margin:0 auto}.leaflet-oldie .leaflet-control-layers,.leaflet-oldie .leaflet-control-zoom,.leaflet-oldie .leaflet-popup-content-wrapper,.leaflet-oldie .leaflet-popup-tip{border:1px solid #999}.leaflet-div-icon{background:#fff;border:1px solid #666}.leaflet-tooltip{position:absolute;padding:6px;background-color:#fff;border:1px solid #fff;border-radius:3px;color:#222;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none;box-shadow:0 1px 3px rgba(0,0,0,.4)}.leaflet-tooltip.leaflet-interactive{cursor:pointer;pointer-events:auto}.leaflet-tooltip-bottom:before,.leaflet-tooltip-left:before,.leaflet-tooltip-right:before,.leaflet-tooltip-top:before{position:absolute;pointer-events:none;border:6px solid transparent;background:0 0;content:""}.leaflet-tooltip-bottom{margin-top:6px}.leaflet-tooltip-top{margin-top:-6px}.leaflet-tooltip-bottom:before,.leaflet-tooltip-top:before{left:50%;margin-left:-6px}.leaflet-tooltip-top:before{bottom:0;margin-bottom:-12px;border-top-color:#fff}.leaflet-tooltip-bottom:before{top:0;margin-top:-12px;margin-left:-6px;border-bottom-color:#fff}.leaflet-tooltip-left{margin-left:-6px}.leaflet-tooltip-right{margin-left:6px}.leaflet-tooltip-left:before,.leaflet-tooltip-right:before{top:50%;margin-top:-6px}.leaflet-tooltip-left:before{right:0;margin-right:-12px;border-left-color:#fff}.leaflet-tooltip-right:before{left:0;margin-left:-12px;border-right-color:#fff}@media print{.leaflet-control{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.map{height:260px;border-radius:14px;border:1.5px solid var(--soft);overflow:hidden;margin:0 0 8px;background:var(--soft);position:relative;z-index:0}
+.map-note{font-size:12px;color:var(--muted);margin:0 0 14px}
+.pin{display:flex;align-items:center;justify-content:center;border-radius:50%;font:700 12px/1 "Noto Sans KR",sans-serif;color:#fff;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35)}
+.pin.can{background:#2F7D4A}.pin.check{background:#2E5AAC}
+.pin.home{background:#C2571A;border-radius:10px;width:auto!important;padding:0 6px}
+.pin.me{background:#1A73E8}
+.num{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;color:#fff;font-size:11px;font-weight:700;margin-right:6px;vertical-align:2px}
+.num.can{background:#2F7D4A}.num.check{background:#2E5AAC}
+.leaflet-container{font-family:"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .map .leaflet-tile{filter:invert(.92) hue-rotate(180deg) brightness(.95) contrast(.9)}}
+:root[data-theme="dark"] .map .leaflet-tile{filter:invert(.92) hue-rotate(180deg) brightness(.95) contrast(.9)}
+
+.map-me{background:var(--card);color:var(--ink);border:1.5px solid var(--soft);border-radius:999px;padding:6px 12px;font:700 13px "Noto Sans KR",sans-serif;box-shadow:0 1px 4px rgba(0,0,0,.25);cursor:pointer}
+.route-info{display:flex;gap:10px;align-items:flex-start;justify-content:space-between;background:var(--jade-soft);border-radius:12px;padding:9px 12px;font-size:14px;margin:0 0 8px}
+.route-info[hidden]{display:none}
+.pop{min-width:180px;font-family:"Noto Sans KR",sans-serif}
+.pop-n{font-weight:700;font-size:15px}.pop-m{font-size:13px;color:#6E5E50;margin:2px 0 4px}
+.pop-b{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+.pop-b button{border:0;border-radius:8px;padding:7px 0;font:700 13px "Noto Sans KR",sans-serif;background:#C2571A;color:#fff;cursor:pointer}
+.pop-b button.ghost{background:#fff;color:#2A211A;border:1.5px solid #E5DACB}
+.leaflet-popup-content-wrapper{border-radius:14px}
+</style>
+
+</head>
+<body>
+<div class="demo"><label for="clock" id="clock-l">Preview time</label>
+<select id="clock"><option value="live">Now</option><option value="13:40">Nov 13 · 13:40</option><option value="16:20">Nov 13 · 16:20</option><option value="17:10">Nov 13 · 17:10</option><option value="18:20">Nov 13 · 18:20</option><option value="20:30">Nov 13 · 20:30</option><option value="2|09:50">Nov 14 · 09:50</option><option value="2|13:00">Nov 14 · 13:00</option></select></div>
+<div class="phone" id="app"></div>
+<p class="sample" id="sample"></p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const LOGO={kakao:"data:image/png;base64,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",naver:"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3NjMuMjk2MDIiIGhlaWdodD0iOTg5LjgwNDAyIiB2aWV3Qm94PSIwIDAgNzYzLjI5NjAyIDk4OS44MDQwMiI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJhIiBjeD0iMCIgY3k9IjAiIHI9IjEiIGZ4PSItMSIgZnk9Ii0xLjIyNDY1ZS0xNiIgZ3JhZGllbnRUcmFuc2Zvcm09InJvdGF0ZSg5MCAtNDIuNDcgMzI4LjcwNilzY2FsZSgzNzYuMjU0MzYpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgc3ByZWFkTWV0aG9kPSJwYWQiPjxzdG9wIG9mZnNldD0iMCIgc3R5bGU9InN0b3Atb3BhY2l0eToxO3N0b3AtY29sb3I6IzAxZTIwMyIvPjxzdG9wIG9mZnNldD0iMC4yIiBzdHlsZT0ic3RvcC1vcGFjaXR5OjE7c3RvcC1jb2xvcjojMDFlMjAzIi8+PHN0b3Agb2Zmc2V0PSIwLjgiIHN0eWxlPSJzdG9wLW9wYWNpdHk6MTtzdG9wLWNvbG9yOiMwMDc5ZmQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLW9wYWNpdHk6MTtzdG9wLWNvbG9yOiMwMDc5ZmQiLz48L3JhZGlhbEdyYWRpZW50PjxjbGlwUGF0aCBpZD0iYiIgY2xpcFBhdGhVbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0tMzMxLjUxOCAxNjcuOTY4aDU3Mi40NzJ2LTc0Mi4zNTNoLTU3Mi40NzJaIi8+PC9jbGlwUGF0aD48L2RlZnM+PHBhdGggZD0iTTI4Ni4yOTMgNzQyLjM1M2EyOTAgMjkwIDAgMCAxLTE1LjE2My0uNGMtODQuNzQxLTQuNDU5LTE2NC4wMTItNDYuNDkzLTIxNS4wMDItMTE1LjE2MkMxOS4zNzYgNTc3LjI5OC4wNzMgNTE3LjczMSAwIDQ1Ni4wODh2LS43MjZxLjAwNS00LjE2OS4xMjgtOC4zNDljMS4wODgtMzcuMDU2IDguMTM4LTcyLjI1NiAyNC4zNC0xMDUuNjQzIDkuNDE0LTE5LjM5OSAxOS40NzgtMzcuNjA1IDMxLjk0NC01NS4zODhsNTguMDE1LTgyLjc2TDI0NC42MzggMjYuMzQ5YzUuNjMzLTcuNjUxIDExLjI0NC0xNC4zMjQgMTkuMDM0LTE5LjUzMUMyNzAuNTk3IDIuMTg5IDI3OC4xNjkuMDA0IDI4NS43MzMgMGguMDQ2YzE0LjA1Ny4wMDkgMjguMDg3IDcuNTQ0IDM3LjkwMiAyMC45MDhsMTU0LjkxNCAyMTAuOTQ3IDQzLjIwNyA2Mi44NTNjMTEuNzU1IDE3LjEgMjAuODc3IDM0LjY2NCAyOS4zNDcgNTMuNTc2IDEyLjA3NCAyNi45NTcgMTguNTYxIDU0LjgxOSAyMC41NDkgODQuNDE0IDEuOTU4IDI5LjE1MS4yNjIgNTcuNjM5LTUuNzk1IDg1LjI4NS0yOC44NzMgMTMxLjc3Ni0xNDYuMDMyIDIyNC4zMzktMjc5LjQ4OCAyMjQuMzd6IiBzdHlsZT0iZmlsbDp1cmwoI2EpO3N0cm9rZTpub25lIiB0cmFuc2Zvcm09Im1hdHJpeCgxLjMzMzMzIDAgMCAtMS4zMzMzMyAwIDk4OS44MDQpIi8+PHBhdGggZD0iTTAgMGMtMi45OTgtLjQ0Ni00Ljk4My0yLjIwOS00Ljk4OC01LjM4M2wtLjE3Ni0xMTYuNDQ0TC04Ni44NzYtNC4wMDNDLTg5LjI5NS0xLjMzNC05Mi4xMDMtLjI0LTk1LjYuMDA2bC02MC40OTEtLjAyMWMtMi4zNTkgMC01LjY3NC0xLjUzNS01LjY3Mi00LjU2OWwuMTMtMjIzLjMyN2MuMDAyLTIuOTI0IDEuOTk2LTQuNjgyIDQuNjkyLTQuNjg0bDY1Ljc4OC0uMDQ0YzMuMjU2LjE4MiA1LjQxOSAyLjE5MSA1LjQyMyA1LjU2MmwuMTI4IDExNi4yNjMgODAuMzE0LTExNS44OTFjMi4yNjktMy4yNzQgNC44MDMtNS4zNjkgOC43MzQtNS45NTJsNjIuNjQ0LjEwM2MzLjMxMi4wMDYgNC45NTkgMi43NDIgNC45NTkgNS42NTRsLjAxNSAyMjEuMjg0YzAgMy41MTgtMi4yMTMgNS41OTItNS40NjcgNS41OTN6IiBjbGlwLXBhdGg9InVybCgjYikiIHN0eWxlPSJmaWxsOiNmZmY7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmUiIHRyYW5zZm9ybT0ibWF0cml4KDEuMzMzMzMgMCAwIC0xLjMzMzMzIDQ0Mi4wMjQgMjIzLjk1NykiLz48L3N2Zz4=",google:"data:image/png;base64,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"};
+const HOSTEL={lat:37.5256808,lng:126.9031729};
+const FORM_URL=""; // 운영진이 만든 익명 구글 폼 주소를 여기에 넣으면 버튼이 폼으로 연결돼요
+const KAKAO_URL="";
+const SURVEY_URL=""; // 행사 후 설문(구글 폼) 주소를 넣으면 22시 무렵부터 버튼이 보여요
+const PREVIEW=location.hash==="#preview"; // 주소 끝에 #preview를 붙이면 미리보기 시각과 시제품 안내가 보여요 // 카카오톡 오픈채팅 링크를 여기에 넣으면 연락 칸에 버튼이 생겨요
+const ING={pork:["Pork","돼지고기"],beef:["Beef","소고기"],chicken:["Chicken","닭고기"],fish:["Fish","생선"],shell:["Shellfish, shrimp","조개·새우"],anch:["Anchovy broth","멸치 육수"],jeot:["Jeotgal, fish sauce","젓갈·액젓"],egg:["Egg","달걀"],dairy:["Dairy","유제품"],gel:["Gelatin","젤라틴"],alc:["Alcohol in cooking","요리에 들어간 술"]};
+const PRESET_NAME={Halal:"할랄","No beef":"소고기 안 먹음",Vegetarian:"채식",Vegan:"비건","Seafood allergy":"해산물 알레르기"};
+const PRESET={Halal:["pork","gel","alc"],"No beef":["beef"],Vegetarian:["pork","beef","chicken","fish","shell","anch","jeot","gel"],Vegan:["pork","beef","chicken","fish","shell","anch","jeot","gel","egg","dairy"],"Seafood allergy":["fish","shell","anch","jeot"]};
+const DAY1=[
+ {s:"14:00",e:"17:00",w:["Workshop","워크숍"],p:["Company office, Seongsu · Seongdong Ansim Sangga 4F meeting room","성수동 회사 · 성동안심상가 4층 회의실"]},
+ {s:"17:00",e:"18:00",w:["Move to the hostel","호스텔로 이동"],p:["By public transport to HiSeoul Youth Hostel, Yeongdeungpo","대중교통으로 하이서울유스호스텔(영등포)까지"],dir:true,video:"https://www.youtube.com/shorts/iHPwXT1ixKQ",arrive:["Look for the green speech-bubble sign on the roof. The entrance is the bright glass lobby on the ground floor.","지붕의 초록색 말풍선 간판을 찾으세요. 입구는 1층의 밝은 유리 로비예요."]},
+ {s:"18:00",e:"19:00",w:["Check-in and dinner","체크인과 저녁 식사"],p:["HiSeoul Youth Hostel · dining hall","하이서울유스호스텔 · 식당"],meal:"dinner"},
+ {s:"19:00",e:"22:00",w:["Evening meeting","저녁 모임"],p:["HiSeoul Youth Hostel · Pair meeting room","하이서울유스호스텔 · 페어 회의실"],meal:"snack",note:["Late-night ramyeon","야식 라면"]}
+];
+const DAY2=[
+ {s:"09:30",e:"10:30",w:["Indoor activity","실내 활동"],p:["HiSeoul Youth Hostel","하이서울유스호스텔"]},
+ {s:"10:30",e:"17:00",w:["Seoul exploration with YGG","YGG와 서울 탐방"],p:["In 3 groups · lunch at a restaurant your group's guide picks","3개 조로 이동 · 점심은 조별 가이드가 안내하는 식당에서"],note:["Tell your guide what you can't eat. Not sure about a dish? Message our staff.","못 먹는 음식은 조 가이드에게 알려 주세요. 메뉴가 헷갈리면 운영진에게 물어보세요."]},
+ {s:"17:00",e:"17:00",w:["Wrap-up","해산"],p:["Place to be announced","장소는 추후 안내"]}
+];
+const DAYS=[{d:"2026-11-13",title:["Today, Fri Nov 13","오늘 일정 · 11월 13일(금)"],s:DAY1},{d:"2026-11-14",title:["Today, Sat Nov 14","오늘 일정 · 11월 14일(토)"],s:DAY2}];
+let CUR=0,SCHEDULE=DAY1;
+const MEALS={
+ dinner:{title:["Dinner · 18:00–19:00","저녁 · 18:00–19:00"],items:[
+  {en:"Fish cake soup",ko:"종합어묵탕",has:["fish"],unk:["anch","shell"]},
+  {en:"Mixed grain rice",ko:"잡곡밥",has:[],unk:[]},
+  {en:"Spicy stir-fried chicken",ko:"매콤닭갈비",has:["chicken"],unk:["alc"]},
+  {en:"Steamed egg with vegetables",ko:"야채계란찜",has:["egg"],unk:["jeot","anch"]},
+  {en:"Stir-fried seaweed stems",ko:"미역줄기볶음",has:[],unk:["jeot"]},
+  {en:"Sweet soy black beans",ko:"콩자반",has:[],unk:["alc"]},
+  {en:"Radish kimchi",ko:"깍두기",has:["jeot"],unk:[]},
+  {en:"Green salad",ko:"그린샐러드",has:[],unk:["egg","dairy"]},
+  {en:"Fruit pudding",ko:"과일푸딩",has:[],unk:["gel","dairy"]},
+  {en:"Candied sweet potato",ko:"고구마맛탕",has:[],unk:[]},
+  {en:"Pineapple salad",ko:"파인애플샐러드",has:[],unk:["egg","dairy"]}]},
+ snack:{title:["Late-night ramyeon · evening meeting","야식 라면 · 저녁 모임"],items:[
+  {en:"Instant ramyeon",ko:"라면",has:["beef"],unk:["pork","fish","shell","egg","dairy"]}]}
+};
+const PLACES=[
+ {en:"Sample Korean diner",verified:false,ko:"샘플 한식당",walk:6,close:"21:00",menus:[{en:"Bibimbap",ko:"비빔밥",has:["beef","egg"],unk:[]},{en:"Vegetable kimbap",ko:"야채김밥",has:["egg"],unk:[]},{en:"Soft tofu stew",ko:"순두부찌개",has:["shell","anch","egg"],unk:[]}],lat:37.5262,lng:126.9010},
+ {en:"Sample vegetable restaurant",verified:false,ko:"샘플 채식식당",walk:7,close:"21:00",menus:[{en:"Mushroom pot rice",ko:"버섯솥밥",has:[],unk:["jeot"]},{en:"Tofu salad",ko:"두부샐러드",has:[],unk:[]}],lat:37.5270,lng:126.8985},
+ {en:"Sample Turkish kebab",verified:false,ko:"샘플 케밥집",walk:9,close:"22:00",menus:[{en:"Chicken kebab",ko:"치킨 케밥",has:["chicken"],unk:[]},{en:"Falafel wrap",ko:"팔라펠 랩",has:[],unk:["dairy"]}],lat:37.5240,lng:126.9055},
+ {en:"Convenience store",verified:false,ko:"편의점",walk:2,close:"24h",menus:[{en:"Plain rice ball",ko:"주먹밥",has:[],unk:["jeot"]},{en:"Banana",ko:"바나나",has:[],unk:[]}],lat:37.5259,lng:126.9036}
+];
+const T={
+ mapNote:["Pins show places with food that fits you. Tap a pin to see it below.","핀은 내 식단에 맞는 음식이 있는 곳이에요. 핀을 누르면 아래에서 보여줘요."],
+ mapOff:["The map couldn't load here. The list below still works.","여기서는 지도를 불러오지 못했어요. 아래 목록은 그대로 쓸 수 있어요."],
+ hostelPin:["Hostel","호스텔"],
+ shift:["Times may shift on the day. Follow our staff's updates.","실제 진행 시간은 바뀔 수 있어요. 운영진 안내를 따라 주세요."],
+ notChecked:["We're still checking places near the hostel. Until then, ask our staff for a nearby place that fits your diet.","호스텔 근처 식당은 아직 확인 중이에요. 그전까지는 운영진에게 내 식단에 맞는 근처 식당을 물어봐 주세요."],
+ surveyT:["How did it go?","오늘 어땠나요?"],surveyD:["3 quick questions. It helps us make this better for the next crew.","질문 3개면 끝나요. 다음 크루를 위해 더 좋게 만드는 데 쓰여요."],surveyBtn:["Answer 3 questions","질문 3개 답하기"],surveySoon:["The survey link will appear here soon.","설문 링크가 곧 여기에 생겨요."],
+ notice:["<b>Schedule updated.</b> We now meet at 14:00 at our office in Seongsu, then move to the hostel before dinner. Earlier Instagram posts show the old plan.","<b>일정이 바뀌었어요.</b> 14:00에 성수동 회사에서 모인 뒤, 저녁 전에 호스텔로 이동해요. 인스타그램에 올라간 예전 일정과 달라요."],
+ station:["Nearest station: Yeongdeungpo Market (Line 5), Exit 1 · about 10 min walk","가까운 역: 영등포시장역(5호선) 1번 출구 · 도보 약 10분"],
+ address:["200 Yeongsin-ro, Yeongdeungpo-gu, Seoul","서울 영등포구 영신로 200"],
+ lateT:["Running late or lost?","늦거나 길을 잃었나요?"],kakao:["Message us on KakaoTalk (open chat)","카카오톡 오픈채팅으로 연락하기"],lateD:["Call or text us. We keep our phones on during the event.","전화나 문자 주세요. 행사 중에는 휴대폰을 계속 확인해요."],call:["Call","전화하기"],text:["Text","문자 보내기"],qT:["Other questions (not urgent)","급하지 않은 문의"],
+ ev:["Glocal Crew 2026 · Kickoff","글로컬 크루 2026 · 발대식"],
+ switchTo:["한국어","English"],
+ ended:["Thanks for coming","참여해 주셔서 고마워요"],endedSub:["The Glocal Crew kickoff has ended","발대식이 끝났어요"],
+ before:["See you on Fri, Nov 13","11월 13일 금요일에 만나요"],beforeSub:["We start at 14:00 in Seongsu","14:00 성수동에서 시작해요"],
+ until:["Until ","~"],next:["Next: ","다음: "],at:["At ","시작 "],
+ done:["That's all for today","오늘 일정은 여기까지예요"],doneSub:["Good night and see you tomorrow","푹 쉬고 내일 만나요"],
+ today:["Today, Fri Nov 13","오늘 일정 · 11월 13일(금)"],now:["Now","진행 중"],
+ dirHostel:["Get directions to the hostel:","호스텔 길찾기"],video:["Walk from the subway station (official video)","역에서 걸어가는 길 (공식 영상)"],
+ seeDinner:["What's in the dinner?","저녁 메뉴 보기"],seeSnack:["What's in the snack?","야식 메뉴 보기"],
+ q:["What can't you eat?","못 먹는 음식이 있나요?"],private:["Only you can see this. It stays on your phone.","나만 볼 수 있고, 내 휴대폰에만 저장돼요."],
+ ingredients:["Ingredients","재료"],show:["Show my food","내가 먹을 수 있는 음식 보기"],any:["I can eat anything","가리는 음식 없어요"],
+ pick:["Pick what you can't eat, or tap “I can eat anything”.","못 먹는 재료를 고르거나 ‘가리는 음식 없어요’를 눌러 주세요."],
+ included:["Already included in ","이미 포함돼 있어요: "],
+ for:["Showing food for: ","기준: "],change:["Change","바꾸기"],none:["No restrictions","가리는 음식 없음"],
+ canN:[" you can eat","먹을 수 있음 "],checkN:[" to check","확인 필요 "],noN:[" not for you","못 먹음 "],
+ askKitchen:["Not sure? Ask our staff","헷갈리면 운영진에게 물어보세요"],askBtn:["Message our staff","운영진에게 물어보기"],notSure:["Not sure about: ","확인 필요: "],contains:["Contains: ","들어간 재료: "],notFor:["Not for you","못 먹는 메뉴"],
+ guess:["Ingredients are guessed from the menu names. Check with our staff to be sure. We never say a dish is safe for allergies.","재료는 메뉴 이름으로 추정한 거예요. 정확한 건 운영진에게 물어봐 주세요. 알레르기에 대해 ‘안전하다’고 말하지 않아요."],
+ findOther:["Find other food near the hostel","호스텔 근처 다른 음식 찾기"],
+ quietT:["Tell the organizers, without your name","이름 없이 운영진에게 알리기"],quietD:["If there's something you can't eat, let us know quietly. We only see the numbers, never who sent it.","못 먹는 음식이 있으면 조용히 알려 주세요. 운영진은 숫자만 보고, 누가 보냈는지는 몰라요."],
+ tell:["Tell the organizers anonymously","익명으로 알리기"],formSoon:["The anonymous form opens here once the organizers add it.","운영진이 익명 폼을 추가하면 여기서 열려요."],
+ near:["Food near the hostel","호스텔 근처 음식"],nearD:["Sorted by walking time. Places that need a check with staff come last.","걸어가는 시간 순이에요. 직원 확인이 필요한 곳은 아래에 있어요."],
+ walk:[" min walk from hostel","호스텔에서 도보 "],min:[""," 분"],open:[" · Open until "," · 영업 "],nomatch:["No match nearby yet.","아직 맞는 곳이 없어요."],
+ sampleNear:["These are sample places. Real ones will be added after we check their menus.","샘플 장소예요. 메뉴를 확인한 실제 장소로 바꿀 예정이에요."],
+ tabs:[["Today","Food","Nearby"],["오늘","음식","근처"]],
+ maps:[["Kakao Map","Naver Map","Google Maps"],["카카오맵","네이버지도","구글 지도"]],
+ preview:["Preview time","미리보기 시각"],live:["Now","지금"],
+ sample:["Prototype. Dinner ingredients are guessed from the menu names and nearby places are samples until we check them.","시제품이에요. 저녁 재료는 메뉴 이름으로 추정했고, 근처 장소는 확인 전까지 샘플이에요."]
+};
+let S={tab:"today",clock:"live",lang:"en",avoid:new Set(),presets:new Set(),diet:false,editing:false,toast:"",loc:null,locState:""};
+const LT={use:["Use my location","내 위치 사용하기"],from:["Walking times are from the hostel.","걸어가는 시간은 호스텔 기준이에요."],using:["Using your location. It stays on your phone.","내 위치를 쓰고 있어요. 위치는 휴대폰에만 있어요."],far:["You're about {n} min from the hostel, so the list still uses the hostel.","호스텔에서 약 {n}분 떨어져 있어서, 목록은 계속 호스텔 기준이에요."],off:["Location is off, so we'll keep using the hostel.","위치가 꺼져 있어서 호스텔 기준으로 보여드려요."],fail:["We couldn't find your location, so we'll keep using the hostel.","위치를 찾지 못해서 호스텔 기준으로 보여드려요."],finding:["Finding you…","위치를 찾는 중…"],none:["Location isn't available on this device.","이 기기에서는 위치를 쓸 수 없어요."],you:[" · {n} min from you"," · 나에게서 {n}분"]};
+const lt=(k,n)=>LT[k][S.lang==="ko"?1:0].replace("{n}",n);
+function walkMin(a,b){const R=6371000,r=x=>x*Math.PI/180;const dLa=r(b.lat-a.lat),dLo=r(b.lng-a.lng);const h=Math.sin(dLa/2)**2+Math.cos(r(a.lat))*Math.cos(r(b.lat))*Math.sin(dLo/2)**2;return Math.max(1,Math.round(2*R*Math.asin(Math.sqrt(h))*1.3/75))}
+function locRow(){if(S.loc){const far=walkMin(S.loc,HOSTEL);return `<p class="small muted" style="margin:0 0 12px">${lt("using")}${far>30?" "+lt("far",far):""}</p>`}
+ return `<div class="small muted" style="margin:0 0 12px">${lt("from")} <button class="link" id="loc">${lt("use")}</button>${S.locState?`<div>${S.locState}</div>`:""}</div>`}
+function fromYou(p){return S.loc?lt("you",walkMin(S.loc,p)):""}
+try{const v=JSON.parse(localStorage.getItem("gc-diet")||"null");if(v){S.avoid=new Set(v.a);S.presets=new Set(v.p);S.diet=true}}catch(e){}
+try{const l=localStorage.getItem("gc-lang");if(l==="ko"||l==="en")S.lang=l}catch(e){}
+const L=()=>S.lang==="ko"?1:0;
+const t=k=>T[k][L()];
+const tx=a=>Array.isArray(a)?a[L()]:a;
+const ing=k=>ING[k][L()];
+const pname=k=>L()?PRESET_NAME[k]:k;
+const nm=o=>L()?o.ko:o.en;
+const nm2=o=>L()?o.en:o.ko;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const mins=hm=>{const[h,m]=hm.split(":").map(Number);return h*60+m};
+const count=(n,k)=>L()?t(k)+n:n+t(k);
+function nowInfo(){let key,m;
+ if(S.clock!=="live"){const pr=S.clock.split("|");CUR=pr.length>1?(+pr[0]-1):0;SCHEDULE=DAYS[CUR].s;return{day:true,m:mins(pr[pr.length-1])}}
+ const parts=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Seoul",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(new Date());const g=k=>parts.find(p=>p.type===k).value;
+ key=g("year")+"-"+g("month")+"-"+g("day");m=(+g("hour"))*60+(+g("minute"));
+ const i=DAYS.findIndex(d=>d.d===key);if(i>=0){CUR=i;SCHEDULE=DAYS[i].s;return{day:true,m}}
+ CUR=key<DAYS[0].d?0:DAYS.length-1;SCHEDULE=DAYS[CUR].s;return{day:false,before:key<DAYS[0].d,m}}
+const hm=m=>String(Math.floor(m/60)).padStart(2,"0")+":"+String(m%60).padStart(2,"0");
+const PT={seoul:["Seoul time ","서울 시간 "],left:["{n} min left","{n}분 남음"],dayLeft:["{n} min until the day ends","오늘 일정 끝까지 {n}분"]};
+const pt=(k,n)=>PT[k][S.lang==="ko"?1:0].replace("{n}",n);
+function dayBar(n){if(!n.day)return"";const a=mins(SCHEDULE[0].s),z=mins(SCHEDULE[SCHEDULE.length-1].e);const pct=Math.max(0,Math.min(100,(n.m-a)/(z-a)*100));const left=Math.max(0,z-n.m);
+ return `<div class="day"><div class="day-top"><span>${pt("seoul")}${hm(n.m)}</span><span class="muted">${left?pt("dayLeft",left):""}</span></div><div class="track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(pct)}"><div class="fill" style="width:${pct}%"></div><div class="dot" style="left:${pct}%"></div></div><div class="day-ends"><span>${SCHEDULE[0].s}</span><span>${SCHEDULE[SCHEDULE.length-1].e}</span></div><div class="small muted" style="margin-top:6px">${t("shift")}</div></div>`}
+function judge(it){if(it.has.some(i=>S.avoid.has(i)))return"no";if(it.unk.some(i=>S.avoid.has(i)))return"check";return"can"}
+function save(){try{localStorage.setItem("gc-diet",JSON.stringify({a:[...S.avoid],p:[...S.presets]}))}catch(e){}}
+function toast(m){S.toast=m;render();setTimeout(()=>{S.toast="";render()},2400)}
+function dirUrl(p){return"https://www.google.com/maps/dir/?api=1&destination="+p.lat+","+p.lng+"&travelmode="+(p.walk?"walking":"transit")}
+function dirLinks(p,name){const n=encodeURIComponent(name);const m=T.maps[L()];return `<div class="maps"><a class="mapbtn" target="_blank" rel="noopener" href="https://map.kakao.com/link/to/${n},${p.lat},${p.lng}"><img class="logo" src="${LOGO.kakao}" alt=""><span>${m[0]}</span></a><a class="mapbtn naver" href="nmap://route/${p.walk?"walk":"public"}?dlat=${p.lat}&dlng=${p.lng}&dname=${n}&appname=tourcompanion" data-fallback="https://map.naver.com/p/search/${n}"><img class="logo" src="${LOGO.naver}" alt=""><span>${m[1]}</span></a><a class="mapbtn" target="_blank" rel="noopener" href="${dirUrl(p)}"><img class="logo" src="${LOGO.google}" alt=""><span>${m[2]}</span></a></div>`}
+
+function bar(){const n=nowInfo();let st,sub;
+ if(!n.day){st=n.before===false?t("ended"):t("before");sub=n.before===false?t("endedSub"):t("beforeSub")}
+ else{const cur=SCHEDULE.find(x=>n.m>=mins(x.s)&&n.m<mins(x.e));const next=SCHEDULE.find(x=>mins(x.s)>n.m);
+  if(cur){st=tx(cur.w);sub=t("until")+cur.e+" · "+tx(cur.p).split(" · ")[0]}
+  else if(next){st=t("next")+tx(next.w);sub=t("at")+next.s+" · "+tx(next.p).split(" · ")[0]}
+  else{st=t("done");sub=t("doneSub")}}
+ return `<div class="bar" role="status"><div class="bar-top"><div class="ev">${t("ev")}</div><button class="lang" id="lang">${t("switchTo")}</button></div><div class="st">${esc(st)}</div><div class="sub">${esc(sub)}</div></div>`}
+
+function today(){const n=nowInfo();
+ const rows=SCHEDULE.map(x=>{const now=n.day&&n.m>=mins(x.s)&&n.m<mins(x.e);const done=n.day&&n.m>=mins(x.e);
+  return `<li class="${now?"now":""} ${done?"done":""}"><div class="t">${x.s}</div><div><div class="w">${tx(x.w)}${now?`<span class="pill">${t("now")}</span>`:""}</div><div class="p">${esc(tx(x.p))}</div>${now?`<div class="track sm"><div class="fill" style="width:${(n.m-mins(x.s))/(mins(x.e)-mins(x.s))*100}%"></div></div><div class="p" style="margin-top:4px">${pt("left",mins(x.e)-n.m)}</div>`:""}${x.note?`<div class="p">${tx(x.note)}</div>`:""}
+  ${x.arrive?`<div class="info"><div class="p"><b>${t("address")}</b></div><div class="p">${t("station")}</div><div class="p">${tx(x.arrive)}</div></div>`:""}
+  ${x.dir?`<div class="p" style="margin-top:6px">${t("dirHostel")}</div>${dirLinks({lat:HOSTEL.lat,lng:HOSTEL.lng},"하이서울유스호스텔")}`:""}${x.video?`<a class="act" target="_blank" rel="noopener" href="${x.video}">${t("video")}</a>`:""}
+  ${x.meal?`<button class="act" data-goto="food" data-meal="${x.meal}">${x.meal==="dinner"?t("seeDinner"):t("seeSnack")}</button>`:""}</div></li>`}).join("");
+ const late=(n.day&&CUR===0&&n.m>=mins(DAY1[DAY1.length-1].e)-30)||(n.day&&CUR===1)||n.before===false;
+ const survey=late?`<div class="contact" style="margin:0 0 16px"><div style="font-weight:800">${t("surveyT")}</div><div class="small muted">${t("surveyD")}</div><button class="btn" id="survey" style="margin-top:8px">${t("surveyBtn")}</button></div>`:"";
+ return `${survey}${CUR===0?`<div class="notice">${t("notice")}</div>`:""}<h1>${tx(DAYS[CUR].title)}</h1>${dayBar(n)}<ol class="tl">${rows}</ol><div class="contact"><div style="font-weight:800">${t("lateT")}</div><div class="small muted">${t("lateD")}</div>${KAKAO_URL?`<a class="btn" style="margin:8px 0 0;text-decoration:none" target="_blank" rel="noopener" href="${KAKAO_URL}">${t("kakao")}</a>`:""}<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px"><a class="btn" style="margin:0;text-decoration:none" href="tel:01064688558">${t("call")}</a><a class="btn ghost" style="margin:0;text-decoration:none" href="sms:01064688558">${t("text")}</a></div><div class="small" style="margin-top:12px">${t("qT")}: <a href="mailto:helloworldkorea202@gmail.com">helloworldkorea202@gmail.com</a></div></div>`}
+
+function dietPicker(){const chips=Object.keys(PRESET).map(k=>`<button class="chip" data-preset="${k}" aria-pressed="${S.presets.has(k)}">${pname(k)}</button>`).join("");
+ const boxes=Object.keys(ING).map(k=>`<label><input type="checkbox" data-ing="${k}" ${S.avoid.has(k)?"checked":""}>${ing(k)}</label>`).join("");
+ return `<h1>${t("q")}</h1><p class="small muted" style="margin-top:-6px">${t("private")}</p><div class="chips">${chips}</div>
+ <h2>${t("ingredients")}</h2><div class="grid">${boxes}</div><button class="btn" id="save">${t("show")}</button><div style="text-align:center;margin-top:10px"><button class="link" id="any">${t("any")}</button></div>`}
+
+function mealBlock(key){const m=MEALS[key];const g={can:[],check:[],no:[]};m.items.forEach(it=>g[judge(it)].push(it));
+ const item=(it,k)=>`<div class="menu"><div class="mn">${nm(it)} <span class="muted small">${nm2(it)}</span></div>${k==="check"?`<div class="ing">${t("notSure")}${it.unk.filter(i=>S.avoid.has(i)).map(ing).join(", ")}</div>`:(it.has.length?`<div class="ing">${t("contains")}${it.has.map(ing).join(", ")}</div>`:"")}</div>`;
+ return `<h2 id="meal-${key}">${tx(m.title)}</h2><div class="sum">${g.can.length?`<span class="tag t-can">${count(g.can.length,"canN")}</span>`:""}${g.check.length?`<span class="tag t-check">${count(g.check.length,"checkN")}</span>`:""}${g.no.length?`<span class="tag t-no">${count(g.no.length,"noN")}</span>`:""}</div>
+ ${g.can.map(i=>item(i,"can")).join("")}${g.check.length?`<div class="small" style="color:var(--check);font-weight:600;margin:10px 0 6px">${t("askKitchen")} <a class="act" style="margin:0 0 0 6px" ${KAKAO_URL?`target="_blank" rel="noopener" href="${KAKAO_URL}"`:`href="sms:01064688558"`}>${t("askBtn")}</a></div>`+g.check.map(i=>item(i,"check")).join(""):""}
+ ${g.no.length?`<details><summary>${t("notFor")} (${g.no.length})</summary>${g.no.map(i=>item(i,"no")).join("")}</details>`:""}`}
+
+function food(){if(!S.diet||S.editing)return dietPicker();
+ const label=S.avoid.size?(S.presets.size?[...S.presets].map(pname).join(", "):[...S.avoid].map(ing).join(", ")):t("none");
+ return `<div class="diet"><span>${t("for")}<b>${esc(label)}</b></span><button class="link" id="edit">${t("change")}</button></div>
+ ${mealBlock("dinner")}${mealBlock("snack")}
+ <p class="note">${t("guess")}</p>
+ <button class="btn ghost" data-goto="nearby">${t("findOther")}</button>
+ <div class="quiet"><h2>${t("quietT")}</h2><p class="small muted" style="margin:0">${t("quietD")}</p><button class="btn" id="tell">${t("tell")}</button></div>`}
+
+let NEAR=[];
+const MT={showMe:["Show me","내 위치"],route:["Route","길 보기"],details:["Details","자세히"],info:["{m} min walk · {d} m {f}","{f} 도보 {m}분 · {d}m"],fromYou:["from you","내 위치에서"],fromHostel:["from the hostel","호스텔에서"],fail:["Couldn't load the walking route here, so a straight line is shown.","여기서는 걸어가는 길을 불러오지 못해 직선으로 보여드려요."],clear:["Clear","지우기"],follow:["Following your location","내 위치를 따라가는 중"]};
+const mt=k=>MT[k][S.lang==="ko"?1:0];
+let MAP={m:null,me:null,line:null,watch:null,first:true,routeTo:null,lastRoute:null};
+const near=()=>S.loc&&walkMin(S.loc,HOSTEL)<=30;
+function stopWatch(){if(MAP.watch!==null){navigator.geolocation.clearWatch(MAP.watch);MAP.watch=null}}
+function startWatch(){if(!navigator.geolocation){S.locState=lt("none");return render()}
+ if(MAP.watch!==null)return;MAP.first=true;S.locState=lt("finding");const n=document.getElementById("map-note");if(n)n.textContent=lt("finding");
+ MAP.watch=navigator.geolocation.watchPosition(pos=>{const had=!!S.loc;S.loc={lat:pos.coords.latitude,lng:pos.coords.longitude};S.locState="";
+   if(!had){render();return}
+   updateMe();
+   if(MAP.routeTo!==null&&MAP.lastRoute&&walkMin(MAP.lastRoute,S.loc)>=1)drawRoute(MAP.routeTo,true)},
+  err=>{S.locState=err.code===1?lt("off"):lt("fail");stopWatch();render()},{enableHighAccuracy:true,maximumAge:10000,timeout:15000})}
+function updateMe(){const LF=window.L,m=MAP.m;if(!LF||!m||!S.loc)return;
+ if(MAP.me)MAP.me.setLatLng([S.loc.lat,S.loc.lng]);else MAP.me=LF.marker([S.loc.lat,S.loc.lng],{icon:LF.divIcon({className:"",html:'<div class="pin me" style="width:18px;height:18px"></div>',iconSize:[18,18],iconAnchor:[9,9]}),title:"You",zIndexOffset:1000}).addTo(m);
+ if(MAP.first&&near()){m.setView([S.loc.lat,S.loc.lng],17);MAP.first=false}
+ const n=document.getElementById("map-note");if(n&&near())n.textContent=mt("follow")}
+async function drawRoute(i,quiet){const LF=window.L,m=MAP.m;if(!LF||!m)return;const x=NEAR[i];if(!x)return;MAP.routeTo=i;
+ const from=near()?S.loc:HOSTEL;MAP.lastRoute=near()?{...S.loc}:null;const f=near()?mt("fromYou"):mt("fromHostel");
+ const info=document.getElementById("route-info");let pts,mins,dist,ok=true;
+ try{const r=await fetch(`https://routing.openstreetmap.de/routed-foot/route/v1/driving/${from.lng},${from.lat};${x.p.lng},${x.p.lat}?overview=full&geometries=geojson`);const j=await r.json();const rt=j.routes[0];pts=rt.geometry.coordinates.map(c=>[c[1],c[0]]);mins=Math.max(1,Math.round(rt.duration/60));dist=Math.round(rt.distance)}
+ catch(e){ok=false;pts=[[from.lat,from.lng],[x.p.lat,x.p.lng]];mins=walkMin(from,x.p);dist=Math.round(mins*75/1.3)}
+ if(MAP.m!==m)return;if(MAP.line)MAP.line.remove();
+ MAP.line=LF.polyline(pts,{color:getComputedStyle(document.documentElement).getPropertyValue("--jade").trim()||"#C2571A",weight:5,opacity:.9,dashArray:ok?null:"6 8"}).addTo(m);
+ if(!quiet)m.fitBounds(MAP.line.getBounds(),{padding:[40,40],maxZoom:18});
+ if(info){info.hidden=false;info.innerHTML=`<span><b>${nm(x.p)}</b> · ${MT.info[S.lang==="ko"?1:0].replace("{m}",mins).replace("{d}",dist).replace("{f}",f)}${ok?"":"<br>"+mt("fail")}</span><button class="link" id="route-clear">${mt("clear")}</button>`}}
+function clearRoute(){if(MAP.line){MAP.line.remove();MAP.line=null}MAP.routeTo=null;const info=document.getElementById("route-info");if(info)info.hidden=true}
+function initMap(){const el=document.getElementById("map");if(!el)return;MAP.me=null;MAP.line=null;
+ if(!window.L){el.style.display="none";document.getElementById("map-note").textContent=t("mapOff");return}
+ const LF=window.L;const start=near()?[S.loc.lat,S.loc.lng]:[HOSTEL.lat,HOSTEL.lng];
+ const m=LF.map(el,{zoomControl:true,attributionControl:true,scrollWheelZoom:false,zoomAnimation:false,fadeAnimation:false,markerZoomAnimation:false}).setView(start,near()?17:16);MAP.m=m;window._map=m;
+ let failed=0;const tl=LF.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:"&copy; OpenStreetMap"}).addTo(m);
+ tl.on("tileerror",()=>{if(++failed===3){document.getElementById("map-note").textContent=t("mapOff")}});
+ const Me=LF.Control.extend({onAdd(){const b=LF.DomUtil.create("button","map-me");b.type="button";b.textContent=mt("showMe");b.setAttribute("aria-label",mt("showMe"));LF.DomEvent.disableClickPropagation(b);b.addEventListener("click",()=>{if(S.loc&&near()){m.setView([S.loc.lat,S.loc.lng],17)}startWatch()});return b}});
+ new Me({position:"topright"}).addTo(m);
+ const pts=[[HOSTEL.lat,HOSTEL.lng]];
+ LF.marker([HOSTEL.lat,HOSTEL.lng],{icon:LF.divIcon({className:"",html:`<div class="pin home" style="height:26px">${t("hostelPin")}</div>`,iconSize:[60,26],iconAnchor:[30,13]}),title:t("hostelPin"),keyboard:true}).addTo(m);
+ NEAR.forEach((x,i)=>{const k=x.c.can?"can":"check";
+  const walk=L()?t("walk")+x.p.walk+t("min"):x.p.walk+t("walk");
+  const pop=`<div class="pop"><div class="pop-n">${nm(x.p)}</div><div class="pop-m">${walk}${fromYou(x.p)}</div><div>${x.c.can?`<span class="tag t-can">${count(x.c.can,"canN")}</span> `:""}${x.c.check?`<span class="tag t-check">${count(x.c.check,"checkN")}</span>`:""}</div><div class="pop-b"><button type="button" data-r="${i}">${mt("route")}</button><button type="button" class="ghost" data-c="${i}">${mt("details")}</button></div></div>`;
+  LF.marker([x.p.lat,x.p.lng],{icon:LF.divIcon({className:"",html:`<div class="pin ${k}" style="width:28px;height:28px">${i+1}</div>`,iconSize:[28,28],iconAnchor:[14,14]}),title:nm(x.p),keyboard:true}).addTo(m).bindPopup(pop,{maxWidth:240,closeButton:true,autoPanPaddingTopLeft:[56,16],autoPanPaddingBottomRight:[16,16]});
+  pts.push([x.p.lat,x.p.lng])});
+ m.on("popupopen",e=>{const pe=e.popup.getElement();pe.querySelectorAll("[data-r]").forEach(b=>b.addEventListener("click",()=>{m.closePopup();drawRoute(+b.dataset.r)}));pe.querySelectorAll("[data-c]").forEach(b=>b.addEventListener("click",()=>{const c=document.getElementById("place-"+b.dataset.c);if(c)c.scrollIntoView({behavior:"smooth",block:"center"})}))});
+ if(near()){updateMe();MAP.first=false}else if(pts.length>1)m.fitBounds(pts,{padding:[30,30],maxZoom:17});
+ if(MAP.routeTo!==null)drawRoute(MAP.routeTo,true);
+ if(MAP.watch===null&&navigator.permissions&&navigator.geolocation){navigator.permissions.query({name:"geolocation"}).then(r=>{if(r.state==="granted")startWatch()}).catch(()=>{})}}
+function nearby(){const ps=NEAR=PLACES.filter(p=>p.verified||PREVIEW).map(p=>{const c={can:0,check:0};p.menus.forEach(m=>{const j=judge(m);if(j!=="no")c[j]++});return{p,c}}).filter(x=>x.c.can||x.c.check).sort((a,b)=>(b.c.can>0)-(a.c.can>0)||a.p.walk-b.p.walk);
+ const walkTxt=w=>L()?t("walk")+w+t("min"):w+t("walk");
+ return `<h1>${t("near")}</h1><p class="small muted" style="margin-top:-6px">${t("nearD")}</p>${locRow()}<div id="map" class="map" aria-label="Map of the hostel and nearby places"></div><div id="route-info" class="route-info" hidden></div><p class="map-note" id="map-note">${t("mapNote")}</p>
+ ${ps.map((x,i)=>`<div class="place" id="place-${i}"><div class="n"><span class="num ${x.c.can?"can":"check"}">${i+1}</span>${nm(x.p)}<span class="ko">${nm2(x.p)}</span></div><div class="meta">${walkTxt(x.p.walk)}${fromYou(x.p)}${t("open")}${x.p.close}</div>
+  ${x.c.can?`<span class="tag t-can">${count(x.c.can,"canN")}</span> `:""}${x.c.check?`<span class="tag t-check">${count(x.c.check,"checkN")}</span>`:""}
+  <div>${dirLinks(x.p,x.p.ko)}</div></div>`).join("")||`<div class="info"><div class="p">${PLACES.some(p=>p.verified)?t("nomatch"):t("notChecked")}</div><a class="act" ${KAKAO_URL?`target="_blank" rel="noopener" href="${KAKAO_URL}"`:`href="sms:01064688558"`}>${t("askBtn")}</a></div>`}
+ ${PREVIEW?`<p class="note">${t("sampleNear")}</p>`:""}`}
+
+function render(){const app=document.getElementById("app");
+ document.documentElement.lang=L()?"ko":"en";
+ document.getElementById("clock-l").textContent=t("preview");document.querySelector('#clock option[value="live"]').textContent=t("live");
+ document.getElementById("sample").textContent=PREVIEW?t("sample"):"";document.querySelector(".demo").style.display=PREVIEW?"":"none";if(!PREVIEW)S.clock="live";
+ const body={today,food,nearby}[S.tab]();
+ const tabs=["today","food","nearby"].map((k,i)=>`<button data-tab="${k}" ${S.tab===k?'aria-current="page"':""}>${T.tabs[L()][i]}</button>`).join("");
+ if(window._map){try{window._map.off();window._map.remove()}catch(e){}window._map=null;MAP.m=null}
+ app.innerHTML=bar()+`<div class="main">${body}</div>`+(S.toast?`<div class="toast" role="status">${esc(S.toast)}</div>`:"")+`<nav class="tabs" aria-label="Sections">${tabs}</nav>`;
+ if(S.tab==="nearby")initMap();else{stopWatch();MAP.m=null}}
+
+document.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+ if(b.id==="lang"){S.lang=S.lang==="en"?"ko":"en";try{localStorage.setItem("gc-lang",S.lang)}catch(err){}return render()}
+ if(b.dataset.tab){S.tab=b.dataset.tab;render();return window.scrollTo(0,0)}
+ if(b.dataset.goto){S.tab=b.dataset.goto;render();const id=b.dataset.meal&&document.getElementById("meal-"+b.dataset.meal);if(id&&S.diet&&!S.editing)id.scrollIntoView();else window.scrollTo(0,0);return}
+ if(b.dataset.preset){const k=b.dataset.preset;if(S.presets.has(k)){S.presets.delete(k);PRESET[k].forEach(i=>{if(![...S.presets].some(q=>PRESET[q].includes(i)))S.avoid.delete(i)})}else{const cover=[...S.presets].find(q=>PRESET[k].every(i=>PRESET[q].includes(i)));if(cover)return toast(t("included")+pname(cover));[...S.presets].forEach(q=>{if(PRESET[q].every(i=>PRESET[k].includes(i)))S.presets.delete(q)});S.presets.add(k);PRESET[k].forEach(i=>S.avoid.add(i))}return render()}
+ if(b.id==="save"){if(!S.avoid.size)return toast(t("pick"));S.diet=true;S.editing=false;save();return render()}
+ if(b.id==="any"){S.avoid.clear();S.presets.clear();S.diet=true;S.editing=false;save();return render()}
+ if(b.id==="edit"){S.editing=true;return render()}
+ if(b.id==="route-clear"){clearRoute();return}
+ if(b.id==="survey"){if(SURVEY_URL){window.open(SURVEY_URL,"_blank","noopener");return}return toast(t("surveySoon"))}
+ if(b.id==="loc"&&S.tab==="nearby"){startWatch();return}
+ if(b.id==="loc"){if(!navigator.geolocation){S.locState=lt("none");return render()}S.locState=lt("finding");render();navigator.geolocation.getCurrentPosition(pos=>{S.loc={lat:pos.coords.latitude,lng:pos.coords.longitude};S.locState="";render()},err=>{S.locState=err.code===1?lt("off"):lt("fail");render()},{enableHighAccuracy:true,timeout:10000,maximumAge:60000});return}
+ if(b.id==="tell"){if(FORM_URL){window.open(FORM_URL,"_blank","noopener");return}return toast(t("formSoon"))}
+});
+document.addEventListener("change",e=>{const el=e.target;
+ if(el.id==="clock"){S.clock=el.value;return render()}
+ if(el.dataset.ing){el.checked?S.avoid.add(el.dataset.ing):S.avoid.delete(el.dataset.ing);S.presets=new Set([...S.presets].filter(k=>PRESET[k].every(i=>S.avoid.has(i))))}
+});
+document.addEventListener("click",e=>{const a=e.target.closest("a.naver");if(!a)return;const fb=a.dataset.fallback;const t0=Date.now();setTimeout(()=>{if(!document.hidden&&Date.now()-t0<2500)window.open(fb,"_blank","noopener")},1500)});
+setInterval(()=>{if(S.clock==="live"&&S.tab==="today")render()},30000);
+render();
+</script>
+</body>
+
+</html>
